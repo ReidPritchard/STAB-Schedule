@@ -5,34 +5,67 @@
 		<link rel="stylesheet" type="text/css" href="../static/homepage.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<title> Stab's Schedule  </title>
-		<script>
-			$('#oneDayClick').on('click', function(){
-
-	        	$('#twoDays').hide();
-	        	$('#ondDay').show();
-
-	   		 });
-			$('')
-		</script>
 	</head>
 	<body>
 		<p> Today's date is: {{date}} </p>
 		<p> And the Letter day is: {{letter}} </p>
-		<ul>
+		<ul id="buttons">
 			<li><a id='oneDayClick'> One Day </a></li>
 			<li><a id='twoDayClick'> Two Days </a></li>
 			<li><a id='fullWeekClick'> Full Week </a></li>
 		</ul>
 	</body>
-	<div id="oneDay" style="background-image: src="{{dayOne}}";">
-		oneDay TEST
+	<div id="oneDay">
+		<img src="{{dayOne}}">
 	</div>
-	<div id="twoDays">
-		<div style="background-image: src="{{dayOne}}";">
-			day Two TEST
-		</div>	
-		<div style="background-image: src="{{dayTwo}}";">
-			day Two TEST
-		</div>	
+
+<!-- ///////////////////////////////////////////////////////////////// -->
+
+	<div id="twoDays" style="display: none;">
+		<ul id="twoDaysList">
+			<li><div><img src="{{dayOne}}"></div></li>	
+			<li><div><img src="{{dayTwo}}"></div></li>	
+		</ul>
 	</div>
+
+<!-- ///////////////////////////////////////////////////////////////// -->
+
+	<div id="fullWeek" style="display: none;">
+		<ul id="fullWeekList">
+			<li><div><img src="{{dayOne}}"></div></li>
+			<li><div><img src="{{dayTwo}}"></div></li>
+			<li><div><img src="{{dayThree}}"></div></li>
+			<li><div><img src="{{dayFour}}"></div></li>
+			<li><div><img src="{{dayFive}}"></div></li>
+		</ul>
+	</div>
+
+		<script>
+
+			$('#oneDayClick').on('click', function(){
+
+	        	$('#twoDays').hide("slow");
+	        	$('#fullWeek').hide("slow");
+	        	$('#oneDay').show("slow");
+
+	   		 });
+			$('#twoDayClick').on('click', function(){
+
+	        	$('#oneDay').hide("slow");
+	        	$('#fullWeek').hide("slow");
+	        	$('#twoDays').show("slow");
+
+			});
+			$('#fullWeekClick').on('click', function(){
+
+	        	$('#oneDay').hide("slow");
+	        	$('#twoDays').hide("slow");
+	        	$('#fullWeek').show("slow");
+
+			});
+
+
+		</script>
+
+
 </html>

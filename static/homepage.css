@@ -2,8 +2,6 @@
 	margin:0;
 	padding:0;
 }
-
-
 p {
 	text-align: center;
 	font-family: 'Work Sans', sans-serif;
@@ -13,7 +11,7 @@ p {
 	color: #db5461;
 	margin-top: 30px;
 }
-ul li a {
+#buttons li a{
 	text-align: center;
 	font-family: 'Work Sans', sans-serif;
 	font-size: 17px;
@@ -26,15 +24,27 @@ ul li a {
 	-webkit-transition:.5s;
 	transition:.5s;
 }
-li {
-	 list-style-type: none;
-	 display: inline;
+#buttons li{
+	display: inline;
 }
-ul{
+#buttons a:hover{
+	color: #8aa29e;
+}
+#buttons{
+	list-style-type: none;
 	text-align: center;
 	margin-top: 20px;
 }
-
-a:hover{
-	color: #8aa29e;
+#oneDay{
+	text-align: center;
+}
+#twoDaysList li{
+	list-style-type: none;
+	text-align: center;
+	display: inline;
+}
+#fullWeekList li{
+	list-style-type: none;
+	text-align: center;
+	display: inline;
 }
