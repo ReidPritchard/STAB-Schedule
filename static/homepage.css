@@ -11,40 +11,17 @@ p {
 	color: #db5461;
 	margin-top: 30px;
 }
-#buttons li a{
+.dayOne{
+	width: 100%;
 	text-align: center;
-	font-family: 'Work Sans', sans-serif;
-	font-size: 17px;
-	margin-left: 10px;
-	margin-right: 10px;
-	text-decoration: none;
-	-o-transition:.5s;
-	-ms-transition:.5s;
-	-moz-transition:.5s;
-	-webkit-transition:.5s;
-	transition:.5s;
+	padding-top: 25px;
 }
-#buttons li{
-	display: inline;
+.dayOne div{
+	margin: auto;
+	background-size: 1400px 1600px;
+	background-repeat: no-repeat;
 }
-#buttons a:hover{
-	color: #8aa29e;
-}
-#buttons{
-	list-style-type: none;
-	text-align: center;
-	margin-top: 20px;
-}
-#oneDay{
-	text-align: center;
-}
-#twoDaysList li{
-	list-style-type: none;
-	text-align: center;
-	display: inline;
-}
-#fullWeekList li{
-	list-style-type: none;
-	text-align: center;
-	display: inline;
+.tag{
+	float: right;
+	font-size: 10px;
 }
