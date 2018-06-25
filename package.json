@@ -7,6 +7,12 @@
     "hogan.js": "3.0.x",
     "ical": "^0.5.0",
     "moment": "2.14.1",
-    "mustache": "^2.2.1"
-  }
+    "mustache": "^2.2.1",
+    "snyk": "^1.83.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
