@@ -3,10 +3,16 @@
   "version": "0.0.1",
   "dependencies": {
     "consolidate": "0.13.x",
-    "express": "4.0.0",
+    "express": "4.15.5",
     "hogan.js": "3.0.x",
     "ical": "^0.5.0",
     "moment": "2.14.1",
-    "mustache": "^2.2.1"
-  }
+    "mustache": "^2.2.1",
+    "snyk": "^1.105.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
